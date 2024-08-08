@@ -40,7 +40,7 @@ const ImageUploader = () => {
         })
           .then(function (response) {
             setResult(
-              `${response.data.predictions[0].class} with ${response.data.predictions[0].confidence}% confidence`
+              `${response.data.predictions[0].class} with ${response.data.predictions[0].confidence*100}% confidence`
             );
           })
           .catch(function (error) {
