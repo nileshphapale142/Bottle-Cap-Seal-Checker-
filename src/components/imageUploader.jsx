@@ -31,7 +31,7 @@ const ImageUploader = () => {
           method: "POST",
           url: "https://detect.roboflow.com/bottle-cap-seal/1",
           params: {
-            api_key: "kLgLRR5FtuT7ruIYg0z4",
+            api_key: import.meta.env.VITE_ROBOFLOW_API_KEY,
           },
           data: base64Image,
           headers: {
